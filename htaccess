@@ -1,0 +1,21 @@
+# Error document response for HTTP response status of 404 (“Not Found”).
+ErrorDocument 404 /~fkhalil/CSCIE12/Final_Project/FinalProject/error.html
+
+# Set expiration headers so that CSS, JavaScript, and image (JPEG, GIF, PNG) files are cached for one day (a setting suggested by PageSpeed).
+ExpiresActive On
+ExpiresByType image/gif   A86400
+# GIF  expires in 1 day
+ExpiresByType image/jpeg  A86400
+# JPEG expires in 1 day
+ExpiresByType image/png   A86400
+# PNG  expires in 1 day
+ExpiresByType text/css   A86400
+# css  expires in 1 day
+ExpiresByType application/javascript   A604800
+# javascript  expires in 1 day
+
+# Set an output filter so that HTML/XHTML, CSS, and JavaScript files are compressed before they are sent to the web browser.
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE application/xhtml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript

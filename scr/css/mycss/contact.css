@@ -1,0 +1,104 @@
+/*!
+ * CSS for Contact.html page
+ */
+@media print { .navbar { display: none; } body { background: #000; } #form {
+    position: fixed;
+    top: 15%;
+    left:70%;
+    width:35%;
+    padding-left: 0%;
+}} 
+
+body, h1, h6, h1{
+font-family:Lucida Sans Unicode;
+}
+
+HTML,BODY, #pics a:hover,#bottom a:hover, .fancybox-title a:hover, .fancybox-outer a:hover  {cursor: url(../../img/butterfly.png), progress !important;}
+
+#form {
+    position: fixed;
+    top: 15%;
+    left:55%;
+    width:35%;
+    padding-left: 6%;
+}
+
+.btn {
+ position: fixed;
+ left: 73%;
+ top: 79%; 
+}
+
+.response {
+    position: fixed;
+    top: 20%;
+    left:55%;
+    width:35%;
+    padding-left: 6%;
+}
+
+#contactheader {
+    
+    margin: 0;
+    padding-left: 15%;
+    overflow: hidden;
+}
+#contactheader ul {
+    list-style-type: none;
+  padding: 0;
+}
+
+#contactheader ul li {
+    float: left;
+    padding-left: 20%;
+}
+
+#sidepic {
+    position: fixed;
+    left:2%;
+    top: 10%;
+    
+}
+
+h6 {
+  color: grey;
+    font-size: 0.8em;
+    
+}
+
+.center-block {
+    position: fixed;
+    top: 20%;
+    padding-top: 1%;
+    padding-left: 0;
+    padding-right: 10px;
+    width: 22%;
+    height: 45%;
+    left: 30%;
+    background-color: #2C2C2C;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.center-block ul {
+   list-style-type:none;
+}
+
+
+.center-block ul li {
+    padding-top: 15px;
+    padding-bottom: 15%;
+    text-decoration:none;
+}
+
+.breadcrumb {
+    background-color: #333;
+    position: fixed;
+    width: 17%;
+    top: 89.7%;
+    left: 0%;
+    height: 20px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    z-index:1;
+}
