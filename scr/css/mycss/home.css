@@ -17,6 +17,13 @@ body {
     text-align: center;
 }
 
+HTML,
+BODY,
+.container,
+#bottom a:hover {
+    cursor: url(../../img/butterfly.png), progress !important;
+}
+
 .cover-heading small {
     color: #333;
     font-weight: bold;
@@ -74,6 +81,7 @@ body {
 #subnav li a {
     color: #777;
     font-weight:bold;
+    z-index: 1;
     
 }
 .navbar {
@@ -229,6 +237,8 @@ div#bar {
 }
 .carousel-caption {
     top: 60%;
+    z-index: 0;
+
 }
 
 .breadcrumb {
