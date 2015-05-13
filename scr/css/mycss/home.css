@@ -1,11 +1,14 @@
 /*!
- * CSS for home.html page
+ * CSS for home.php page
  */
+
+/* This is a test print css rule to hide the nav bar when printing*/
 @media print {
 
  .navbar { display: none; }
  }
 
+/* These set the main container of the website, font, background, text alignment, cursor */
 html,
 body {
     height: 100%;
@@ -19,22 +22,25 @@ body {
 
 HTML,
 BODY,
-.container,
+#transparent,
 #bottom a:hover {
     cursor: url(../../img/butterfly.png), progress !important;
 }
 
+/* small text Heading style */
 .cover-heading small {
     color: #333;
     font-weight: bold;
 }
+
+/* Website background style */
 #transparent {
     overflow: hidden;
     background-image: url('../../img/background.png');
     width: 100%;
     height:99%;
     margin-top: 10px;
-    z-index: -1;
+    z-index: -2;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,6 +48,7 @@ BODY,
     background-position: center; 
 }
 
+/* Boat animation */
 .boat{
     height: 20%;
     background-image: url('../../img/Untitled.png');
@@ -50,70 +57,6 @@ BODY,
     top: 32%;
     -webkit-animation: mymove 15s infinite alternate ; /* Chrome, Safari, Opera */
     animation: mymove 15s infinite alternate ;
-}
-
-#bottom {
-    position: fixed;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    top: 94%;
-    left: 0%;
-    bottom: 0%;
-    background-color: #333;
-    z-index: 0;
-}
-
-#top {
-    position: fixed;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    background-color: #333;
-    z-index: 1;
-}
-
-.dropdown-menu {
-    background-color: black;
-    z-index: 0;
-}
-
-#subnav li a {
-    color: #777;
-    font-weight:bold;
-    z-index: 1;
-    
-}
-.navbar {
-    margin-top: -20px;
-}
-.btn-primary {
-    position: fixed;
-    left: 80%;
-    top: 70%;
-}
-
-.img-rounded {
-    float: left;
-    display: inline !important;
-    margin-left: 36.5%;
-    z-index: 1;
-}
-
-#bio{
-margin-left: 0%;
-}
-.modal-content {
-    background-color: #2C2C2C;
-}
-div#bar {
-    width: 30px;
-    height: 10px;
-    background: #751947;
-    position: relative;
-    -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 10s infinite;
-    z-index: 0;
 }
 
 /* Chrome, Safari, Opera */
@@ -137,32 +80,63 @@ div#bar {
     from {left: 0px;}
     to {left: 200px;}
 }
-#carousel-example-generic {} .masterfoot {
+
+/* Bottom bar where the navbar and audio and copyright is */
+#bottom {
     position: fixed;
-    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
-    left: 36%;
-}
-#footercover {
+    top: 94%;
+    left: 0%;
+    bottom: 0%;
     background-color: #333;
+    z-index: 0;
 }
-.row {
-    margin-left: 5%;
-}
-.nav-tabs {
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
     position: fixed;
-    bottom: 0px;
-    left: 0
-}
-#footercopyright {
-    position: fixed;
-    background-color: #333;
     display: block;
-    font-size: 90%;
-    line-height: 1.42857143;
-    color: #777;
-    bottom: 0;
-    left: 40%;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+}
+#loading-image {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+}
+
+/* The top bar and bar animation */
+#top {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #333;
+    z-index: 1;
+}
+
+div#bar {
+    width: 30px;
+    height: 10px;
+    background: #751947;
+    position: relative;
+    -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 10s infinite;
+    z-index: 1;
+}
+
+/* Navbar and Dropdown menu style */
+.dropdown-menu {
+    background-color: black;
+    z-index: 0;
 }
 
 .dropdown-menu > div {
@@ -184,25 +158,76 @@ div#bar {
 .dropdown > div:hover {
     opacity: 1;
 }
-#loading {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    display: block;
-    opacity: 0.7;
-    background-color: #fff;
-    z-index: 99;
-    text-align: center;
-}
-#loading-image {
-    position: absolute;
-    top: 100px;
-    left: 240px;
-    z-index: 100;
+
+#subnav li a {
+    color: #777;
+    font-weight:bold;
+    z-index: 1;
 }
 
+.navbar {
+    margin-top: -20px;
+}
+
+.navbar-nav {
+  z-index: 1;
+}
+
+.nav-tabs {
+    position: fixed;
+    bottom: 0px;
+    left: 0
+}
+
+/* Modal style for "Discover me!" */
+.btn-primary {
+    position: fixed;
+    left: 80%;
+    top: 70%;
+}
+
+.img-rounded {
+    float: left;
+    display: inline !important;
+    margin-left: 36.5%;
+    z-index: 1;
+}
+
+#bio{
+margin-left: 0%;
+}
+
+.modal-content {
+    background-color: #2C2C2C;
+}
+
+/* Footer style */
+.masterfoot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 36%;
+}
+#footercover {
+    background-color: #333;
+}
+
+#footercopyright {
+    position: fixed;
+    background-color: #333;
+    display: block;
+    font-size: 90%;
+    line-height: 1.42857143;
+    color: #777;
+    bottom: 0;
+    left: 40%;
+}
+
+.row {
+    margin-left: 5%;
+}
+
+/* Carousel style for news update */
 .carousel .item {
     margin-right: 60%;
     max-height: 60%; /*slider height*/
@@ -211,19 +236,22 @@ div#bar {
 .carousel-indicators {
     position: fixed;
     height: 10%;
-    left: 25%;
-    z-index: 0;
-
+    left: 35%;
+    z-index: 2;
 }
+
+.carousel {
+  position: relative;
+  left: 10%;
+}
+
 .carousel .item img {
     width: 100%; /*img width*/
 }
 
-/*add some makeup*/
 .carousel .carousel-control {
     background: none;
     border: none;
-    
 }
 
 .item {
@@ -241,6 +269,7 @@ div#bar {
 
 }
 
+/* breadcrumb style */
 .breadcrumb {
     background-color: #333;
     position: fixed;
@@ -252,3 +281,17 @@ div#bar {
     padding-bottom: 0%;
     z-index:1;
 }
+
+#audioList ul {
+    list-style-type: none;
+  padding: 0;
+    margin-left: -10%;
+}
+
+#audioList ul li  {
+    display: inline;
+    padding:-10%;
+    position: relative; 
+    left: 10%;
+}
+

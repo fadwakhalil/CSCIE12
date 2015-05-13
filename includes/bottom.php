@@ -21,7 +21,20 @@
     <!-- Player in footer & copyright -->
                     <div class="masterfoot">
                         <p id="footercopyright">Copyright &copy; Fadwa Khalil 2015. All Rights Reserved</p>
-                            <audio id="myAudio" controls loop  autoplay="autoplay"><source src="scr/img/Mawtini.mp3"/></audio>
+                        <div id="playerboxframe">
+                            <div id="tracksholder">
+                                <div id="audioList">
+                                    <ul id="infoToggler">
+                                        <li data-mp3="" data-ogg="">
+                                            <img src="scr/img/pause.png" id="pause" width="17" height="18" alt="Pause">
+                                        </li>
+                                        <li data-mp3="scr/img/Omar.mp3" data-ogg="scr/img/Omar.ogg">
+                                            <img src="scr/img/play.png" id="play" width="30" height="23" alt="Play">
+                                        </li>
+                                        <li data-mp3="scr/img/Omar.mp3" data-ogg="scr/img/Omar.ogg" >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </nav>
                     </div>
-                </nav>
-            </div>

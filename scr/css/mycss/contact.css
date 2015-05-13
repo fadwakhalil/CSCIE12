@@ -1,20 +1,32 @@
 /*!
  * CSS for Contact.html page
  */
-@media print { .navbar { display: none; } body { background: #000; } #form {
+
+@media print { .navbar 
+    { 
+        display: none; 
+    } 
+    body { 
+        background: #fff; 
+    } 
+    #form {
     position: fixed;
     top: 15%;
     left:70%;
     width:35%;
     padding-left: 0%;
-}} 
+    }
+} 
 
+/* Main container font style */
 body, h1, h6, h1{
 font-family:Lucida Sans Unicode;
 }
 
+/* These set the main container of the contact page cursor */
 HTML,BODY, #pics a:hover,#bottom a:hover, .fancybox-title a:hover, .fancybox-outer a:hover  {cursor: url(../../img/butterfly.png), progress !important;}
 
+/* Message form style */
 #form {
     position: fixed;
     top: 15%;
@@ -23,12 +35,14 @@ HTML,BODY, #pics a:hover,#bottom a:hover, .fancybox-title a:hover, .fancybox-out
     padding-left: 6%;
 }
 
+/* Send button positioning */
 .btn {
  position: fixed;
  left: 73%;
- top: 81%; 
+ top: 83%; 
 }
 
+/* Sent message response positioning */
 .response {
     position: fixed;
     top: 20%;
@@ -37,6 +51,7 @@ HTML,BODY, #pics a:hover,#bottom a:hover, .fancybox-title a:hover, .fancybox-out
     padding-left: 6%;
 }
 
+/* Header positioning */
 #contactheader {
     
     margin: 0;
@@ -53,6 +68,7 @@ HTML,BODY, #pics a:hover,#bottom a:hover, .fancybox-title a:hover, .fancybox-out
     padding-left: 19%;
 }
 
+/* Dania's side picture positioning */
 #sidepic {
     position: fixed;
     left:2%;
@@ -60,12 +76,14 @@ HTML,BODY, #pics a:hover,#bottom a:hover, .fancybox-title a:hover, .fancybox-out
     
 }
 
+/* Social Media font caption color */
 h6 {
-  color: grey;
+    color: #E5E5E5;
     font-size: 0.8em;
-    
+    font-weight: 900;
 }
 
+/* Social Media container positioning */
 .center-block {
     position: fixed;
     top: 20%;
@@ -77,13 +95,11 @@ h6 {
     left: 29%;
     background-color: #2C2C2C;
     border-radius: 30px 30px 30px 30px;
-
 }
 
 .center-block ul {
    list-style-type:none;
 }
-
 
 .center-block ul li {
     padding-top: 15px;
@@ -91,6 +107,7 @@ h6 {
     text-decoration:none;
 }
 
+/* Breadcrumb style */
 .breadcrumb {
     background-color: #333;
     position: fixed;
@@ -101,4 +118,50 @@ h6 {
     padding-top: 0%;
     padding-bottom: 0%;
     z-index:1;
+}
+
+/* Navbar and Dropdown menu style */
+.dropdown-menu {
+    background-color: black;
+    z-index: 0;
+}
+
+.dropdown-menu > div {
+    float: left;
+    padding: 10px;
+    background: #777;
+    width: 150px;
+    height: 100px;
+    margin: 8px;
+    box-shadow: 1px 2px #334;
+    -webkit-transition: 0.5s;
+}
+/* fade ALL out on parent hover */
+.dropdown-menu:hover > div {
+    opacity: 0.6;
+}
+/* fade ONE in on hover */
+
+.dropdown > div:hover {
+    opacity: 1;
+}
+
+#subnav li a {
+    color: #777;
+    font-weight:bold;
+    z-index: 1;
+}
+
+.navbar {
+    margin-top: -20px;
+}
+
+.navbar-nav {
+  z-index: 1;
+}
+
+.nav-tabs {
+    position: fixed;
+    bottom: 0px;
+    left: 0
 }

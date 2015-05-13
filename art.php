@@ -34,7 +34,7 @@
                 <div id="galtransparent">
     <!-- Add breadcrumb -->
                     <ol class="breadcrumb">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li class="active">Gallery-Art</li>
                     </ol>  
     <!-- Main Container for media -->

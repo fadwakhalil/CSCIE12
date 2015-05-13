@@ -13,10 +13,10 @@
     <!-- Add Youtube library -->
         <script src="http://www.youtube.com/player_api"></script>
 
-    <!-- JS to add fancybox thumbnails -->
+    <!-- JS to add fancybox for art and photos -->
         <script type="text/javascript">
             $(document).ready(function() {
-                $(".fancybox")    .attr('rel', 'data-gallery ')
+                $(".fancybox-button")    .attr('rel', 'data-gallery ')
                     .fancybox({
                         beforeShow: function () {
                             if (this.title) {
@@ -36,39 +36,6 @@
                                     title	: { type : 'float' }
                                 }  
                             });
-                        $(document).ready(function() {
-                            $(".various").fancybox({
-                                maxWidth	: 800,
-                                maxHeight	: 600,
-                openEffect  : 'none',
-                closeEffect : 'none',
-                nextEffect  : 'none',
-                prevEffect  : 'none',
-                                fitToView	: true,
-                                width		: '70%',
-                                height		: '70%',
-                                autoSize	: false,
-                                closeClick	: false,
-helpers: {
-        media: {}
-    }                            });
-                        });
+                      
                     });
-        </script>
-    <!-- JS to control audio player when youtube plays -->
-        <script>
-            $(document).ready(function() {
-                var $audio = $('audio');
-                var audio = $audio[0];
-                
-                $('.various').click(function(){
-                    audio.pause();
-                });
-                
-                $('.fancybox').click(function(){
-                    if (audio.paused) {
-                        audio.play();
-                    }
-                });
-         });
         </script>

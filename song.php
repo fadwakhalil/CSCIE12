@@ -22,7 +22,21 @@
                 left: -5%;
                 width: 105%;
                 height:40%;
-}
+            }
+            .grow {
+                width: 35%;
+                height: 200px;
+                float: left;
+            }
+
+             .fancybox-next {
+                right: -60px;
+            }
+
+            .fancybox-prev {
+                left: -60px;
+            }           
+
         </style>
     </head>
         <body>
@@ -35,15 +49,16 @@
                 <div id="galtransparent">
     <!-- Add breadcrumb -->
                     <ol class="breadcrumb">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li class="active">Gallery-Songs</li>
-                    </ol>  
+                    </ol>
+    <!-- Main Container for media -->
                     <div id="pics">
-                    <?php include("includes/songlib.php"); ?>
+            <?php include("includes/songlib.php"); ?>
+                   <!-- Footer & nav -->
+            <?php include("includes/bottom.php"); ?>
                     </div>
                 </div>
             </div>
-    <!-- Footer & nav -->
-            <?php include("includes/bottom.php"); ?>
     </body>
 </html>

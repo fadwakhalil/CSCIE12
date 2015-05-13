@@ -1,6 +1,8 @@
 /*!
- * CSS for gallery.html, atr.html, photo.html and song.html page
+ * CSS for gallery.html, atr.html, photo.html and song.html pages
  */
+
+/* These set the main container of the gallery page cursor */
 HTML,
 BODY,
 .container,
@@ -10,6 +12,8 @@ BODY,
 .fancybox-outer a:hover {
     cursor: url(../../img/butterfly.png), progress !important;
 }
+
+/* Fancybox style */
 .fancybox-tupe-image {
     background-color: black;
 }
@@ -24,13 +28,13 @@ BODY,
     min-height: 30px;
     vertical-align: middle;
 }
-/*GROW*/
-
+/* pictures alognment and Grow of pictures when hover */
 #pics {
     position: absolute;
     top: 0%;
     margin-bottom: -10.5%;
 }
+
 .grow img {
     overflow: hidden;
     height: 300px;
@@ -40,18 +44,22 @@ BODY,
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
+    
 }
+
 .grow img:hover {
     width: 400px;
     height: 400px;
     z-index: -1;
 }
+
 .grow {
     width: 20%;
     height: 200px;
     float: left;
 }
 
+/* Set the main container of the gallery page */
 .container {
     clear: both;
     overflow:hidden;
@@ -62,6 +70,7 @@ BODY,
 
 }
 
+/* Breadcrumb style */
 .breadcrumb {
     background-color: #333;
     position: fixed;
